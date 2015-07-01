@@ -23,6 +23,5 @@
   },
   "homepage": "https://github.com/punkave/async-merge-sort",
   "dependencies": {
-    "lodash": "^3.10.0"
   }
 }

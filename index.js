@@ -1,5 +1,3 @@
-var _ = require('lodash');
-
 var later;
 
 if (typeof setImmediate === 'undefined') {
@@ -13,9 +11,10 @@ if (typeof setImmediate === 'undefined') {
 module.exports = function(items, comparator, callback) {
   // dice into lists of length 1, which are considered to be
   // internally sorted
-  var lists = _.map(items, function(item) {
-    return [ item ];
-  });
+  var lists = [];
+  for (var i = 0; (i < items.length); i++) {
+    lists.push([ items[i] ]);
+  }
 
   // if there are no items, we're done
   if (!lists.length) {

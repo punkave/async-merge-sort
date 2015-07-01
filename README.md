@@ -42,7 +42,13 @@
 
 Since the overwhelming majority of the time presumably is spent waiting around for the comparison function to invoke its callback, this module is not written with raw speed in mind. It's also possible to create fewer arrays. This was simply the most readable version of the algorithm.
 
+## Browser Compatibility
+
+No new-wave JavaScript features are required. Expected to work in all browsers going back quite a long way.
+
 ## Changelog
+
+0.1.1: removed dependency on lodash. No longer imports any other modules.
 
 0.1.0: initial version. Passing unit tests.
 
