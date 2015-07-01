@@ -48,6 +48,8 @@ No new-wave JavaScript features are required. Expected to work in all browsers g
 
 ## Changelog
 
+0.1.2: tests don't require lodash either. No other changes.
+
 0.1.1: removed dependency on lodash. No longer imports any other modules.
 
 0.1.0: initial version. Passing unit tests.

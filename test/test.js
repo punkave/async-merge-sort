@@ -1,5 +1,4 @@
 var assert = require("assert");
-var _ = require('lodash');
 
 describe('async-merge-sort', function() {
   var asyncMergeSort;
@@ -26,7 +25,11 @@ describe('async-merge-sort', function() {
     return trial(0, done);
   });
   function trial(n, done) {
-    var data = _.shuffle(_.range(n));
+    var data = [];
+    for (var i = 0; (i < n); i++) {
+      data[i] = i;
+    }
+    shuffle(data);
     var comparisons = 0;
     return asyncMergeSort(data, function(a, b, callback) {
       comparisons++;
@@ -54,4 +57,24 @@ describe('async-merge-sort', function() {
       return done();
     });
   }
+
+  // http://bost.ocks.org/mike/shuffle/
+  function shuffle(array) {
+    var m = array.length, t, i;
+
+    // While there remain elements to shuffle…
+    while (m) {
+
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+
+      // And swap it with the current element.
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+
+    return array;
+  }
+
 });
