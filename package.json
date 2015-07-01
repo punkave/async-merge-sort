@@ -1,0 +1,28 @@
+{
+  "name": "async-merge-sort",
+  "version": "0.1.0",
+  "description": "Efficiently sort an array with an asynchronous comparison function. Suitable for sorts driven by prompting the user for each comparison, for instance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/async-merge-sort"
+  },
+  "keywords": [
+    "async",
+    "merge",
+    "sort",
+    "asynchronous"
+  ],
+  "author": "P'unk Avenue LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/punkave/async-merge-sort/issues"
+  },
+  "homepage": "https://github.com/punkave/async-merge-sort",
+  "dependencies": {
+    "lodash": "^3.10.0"
+  }
+}
