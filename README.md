@@ -40,7 +40,7 @@
 
 ## Limitations
 
-Since the overwhelming majority of the time presumably is spent waiting around for the comparison function to invoke its callback, this module is not written with raw speed in mind. It's no doubt possible to create fewer arrays; this was simply the most readable version of the algorithm.
+Since the overwhelming majority of the time presumably is spent waiting around for the comparison function to invoke its callback, this module is not written with raw speed in mind. It's also possible to create fewer arrays. This was simply the most readable version of the algorithm.
 
 ## Changelog
 
