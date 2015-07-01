@@ -1,6 +1,6 @@
 {
   "name": "async-merge-sort",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Efficiently sort an array with an asynchronous comparison function. Suitable for sorts driven by prompting the user for each comparison, for instance.",
   "main": "index.js",
   "scripts": {
