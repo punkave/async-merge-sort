@@ -23,10 +23,10 @@
       $a.off('click');
       $b.off('click');
       $a.on('click', function() {
-        return callback(null, a);
+        return callback(null, -1);
       });
       $b.on('click', function() {
-        return callback(null, b);
+        return callback(null, 1);
       });
     }, function(err, sorted) {
       if (err) {
